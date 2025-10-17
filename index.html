@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellbeing Club at IIT Jammu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <style>
+    .bannerPan {
+      background: url("img/bannerbg.jpg");
+      width: 100%;
+      height: 80vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+
+      & .banner {
+        height: 60%;
+
+        & .quote {
+          font-family: "Audiowide";
+          font-size: clamp(2em, 4vw, 4em);
+          text-align: center;
+          transform: scaleY(1.2);
+          background: linear-gradient(#ffffff9c, #9addfa);
+          -webkit-background-clip: text;
+          color: transparent;
+          backdrop-filter: blur(1px);
+        }
+      }
+    }
+
+    .bannerPan::before {
+      content: "";
+      width: 100%;
+      height: 67px;
+      background: #000;
+      position: absolute;
+      background: linear-gradient(#0000, var(--lightBg2));
+      bottom: 0;
+    }
+  </style>
+
+  <div class="bannerPan">
+    <div class="banner w100p flex">
+      <div class="quoteBox flex">
+        <div class="quote">❝ARISE! AWAKE! AND GO TILL YOU.❞</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/menuMaker.js"></script>
+
+
+  <div class="gencont flex c">
+    <h2>Heading Lorem, ipsum dolor.</h2>
+
+    <div class="content flex">
+
+      <div class="img flex">
+        <img src="https://iitjammu.ac.in/events/2024/celebrating-international-day-of-yoga-2024/3.JPG"
+          alt="Wellbeing club of iit jammu">
+      </div>
+
+      <div class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error animi natus consequuntur quam voluptatibus
+        perferendis fugit necessitatibus tempora quisquam vero doloremque maxime optio, deleniti veniam aliquam ipsam
+        eaque. Ex laudantium, ducimus, dignissimos vitae sunt nemo qui hic commodi earum deleniti repudiandae ratione
+        ipsa veniam alias vel perspiciatis. In minima voluptates ad, rerum omnis laborum amet. Quia fuga doloremque
+        minima repellendus perferendis facilis? Vel ad ea similique vitae quae illo delectus, iste neque facere a!
+        Assumenda animi ut ad, commodi voluptates doloribus cumque sed exercitationem, possimus amet tempore maiores
+        rerum tempora minima placeat facilis corrupti, dolorum voluptatibus neque id sapiente iure?
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <style>
+    .eventPanel {
+      width: 100%;
+      padding: 20px;
+      margin-top: 40px;
+      overflow: auto;
+
+      & .eventIn {
+        width: max-content;
+
+
+        .eventBox {
+          width: 350px;
+          background: linear-gradient(25deg, #ff000054, #0071ff42);
+          padding: 20px;
+          border-radius: 15px;
+          color: #111;
+          margin: 0 20px;
+
+          & img {
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            margin-bottom: 20px;
+            aspect-ratio: 16/11;
+            object-fit: cover;
+          }
+
+          & .title {
+            font-size: 1.4em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .eventParent::before,
+    .eventParent::after {
+      content: '';
+      position: absolute;
+      width: min(30px, 20vw);
+      height: 100%;
+      background-color: #000;
+      top: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, var(--lightBg2), transparent);
+      backdrop-filter: blur(12px);
+    }
+
+    .eventParent::after {
+      right: 0;
+      background: linear-gradient(-90deg, var(--lightBg2), transparent);
+
+    }
+  </style>
+  <div class="gencont flex c">
+
+    <h2>Events</h2>
+    <div class="eventParent w100p">
+      <div class="eventPanel">
+        <div class="eventIn flex">
+
+          <div class="eventBox">
+            <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
+            <div class="title">Lorem, ipsum.</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
+              architecto, tenetur asperiores cum placeat pariatur quis commodi quam voluptates ipsam fuga illum odio
+              quasi?</p>
+          </div>
+
+          <div class="eventBox">
+            <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
+            <div class="title">Lorem, ipsum.</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
+              architecto, tenetur asperiores cum placeat pariatur quis commodi quam voluptates ipsam fuga illum odio
+              quasi?</p>
+          </div>
+
+          <div class="eventBox">
+            <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
+            <div class="title">Lorem, ipsum.</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
+              architecto, tenetur asperiores cum placeat pariatur quis commodi quam voluptates ipsam fuga illum odio
+              quasi?</p>
+          </div>
+
+          <div class="eventBox">
+            <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
+            <div class="title">Lorem, ipsum.</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
+              architecto, tenetur asperiores cum placeat pariatur quis commodi quam voluptates ipsam fuga illum odio
+              quasi?</p>
+          </div>
+
+          <div class="eventBox">
+            <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
+            <div class="title">Lorem, ipsum.</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
+              architecto, tenetur asperiores cum placeat pariatur quis commodi quam voluptates ipsam fuga illum odio
+              quasi?</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <button class="noBtn mainBtn button" >All Events</button>
+
+  </div>
+
+
+  <section class="gencont flex c footer" style="background: #111; margin-bottom: 0;">
+    <div class="content flex">
+      <div class="right">
+        <b>Timings</b>
+        <p><strong>Monday- Saturday:</strong> 10:00 am – 7:00 pm</p>
+        <p><strong>Emergency:</strong> Any time Online Counselling</p>
+
+        <div class="lineMargin" m="50px"></div>
+        <p>Follow Us</p>
+      </div>
+
+      <div class="left" fs=".9em">
+        <p >
+          <strong>OFFICE ADDRESS & CONTACT DETAILS:</strong>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error cupiditate veniam neque aliquam doloremque.
+        </p>
+        <div class="lineMargin" m="10px"></div>
+
+        <p><strong>Ph:</strong><a href="tel:04355928343"> 04355-928343</a></p>
+        <div class="lineMargin" m="10px"></div>
+
+        <p><strong>Email:</strong><a href="mailto:wellbeingclub@iitjammu.ac.in"> wellbeingclub@iitjammu.ac.in</a></p>
+
+      </div>
+
+    </div>
+    <div class="mapBox w100p" style="padding: 20px;">
+      <div class="map" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.4514566255533!2d74.89677934046611!3d32.80196600817788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e81a318ac100b%3A0xac88bcb164e7cb1f!2sIIT%20Jammu%20South%20Block!5e0!3m2!1sen!2sin!4v1760722749768!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <script>
+    resetFormat();
+    document.querySelectorAll("*[id]").forEach(val => {
+      var id = val.getAttribute("id");
+      window[id] = val;
+    })
+  </script>
+</body>
+
+</html>
