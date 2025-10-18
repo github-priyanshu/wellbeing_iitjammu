@@ -1,22 +1,22 @@
-var menuData={
-    "Home":"home",
-    "About Us":"info_i",
-    "Events":"timeline",
-    "Council":"productivity",
-    "Support":"support_agent",
-    "Testimonials":"3p",
-    "FAQ's":"contact_support",
-    "Team":"group",
+var menuData = {
+  "Home": "home",
+  "About Us": "info_i",
+  "Events": "timeline",
+  "Council": "productivity",
+  "Support": "support_agent",
+  "Testimonials": "3p",
+  "FAQ's": "contact_support",
+  "Team": "group",
 }
-var menuxx="";
-for(val in menuData){
-    menuxx+=`
+var menuxx = "";
+for (val in menuData) {
+  menuxx += `
       <div class="menu">
         <p class="flex"> <span class="material-symbols-outlined">${menuData[val]}</span> <b>${val}</b></p>
       </div>
     `
 }
-var menuHtml=`
+var menuHtml = `
 
     <style>
     .menuPan {
@@ -50,4 +50,4 @@ ${menuxx}
 
 `
 
-document.body.insertAdjacentHTML("beforeend",menuHtml);
+document.body.insertAdjacentHTML("beforeend", menuHtml);

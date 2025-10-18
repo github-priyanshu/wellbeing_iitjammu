@@ -93,69 +93,15 @@
 
   </div>
 
-  <style>
-    .eventPanel {
-      width: 100%;
-      padding: 20px;
-      margin-top: 40px;
-      overflow: auto;
-
-      & .eventIn {
-        width: max-content;
-
-
-        .eventBox {
-          width: 350px;
-          background: linear-gradient(25deg, #ff000054, #0071ff42);
-          padding: 20px;
-          border-radius: 15px;
-          color: #111;
-          margin: 0 20px;
-
-          & img {
-            width: 100%;
-            border-radius: 5px;
-            border: 2px solid #fff;
-            margin-bottom: 20px;
-            aspect-ratio: 16/11;
-            object-fit: cover;
-          }
-
-          & .title {
-            font-size: 1.4em;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    .eventParent::before,
-    .eventParent::after {
-      content: '';
-      position: absolute;
-      width: min(30px, 20vw);
-      height: 100%;
-      background-color: #000;
-      top: 0;
-      z-index: 1;
-      background: linear-gradient(90deg, var(--lightBg2), transparent);
-      backdrop-filter: blur(12px);
-    }
-
-    .eventParent::after {
-      right: 0;
-      background: linear-gradient(-90deg, var(--lightBg2), transparent);
-
-    }
-  </style>
+  <link rel="stylesheet" href="css/longScroll.css">
   <div class="gencont flex c">
 
     <h2>Events</h2>
-    <div class="eventParent w100p">
-      <div class="eventPanel">
-        <div class="eventIn flex">
+    <div class="longScrollParent w100p">
+      <div class="longScrollPanel">
+        <div class="longScrollIn flex">
 
-          <div class="eventBox">
+          <div class="longScrollBox">
             <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
             <div class="title">Lorem, ipsum.</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
@@ -163,7 +109,7 @@
               quasi?</p>
           </div>
 
-          <div class="eventBox">
+          <div class="longScrollBox">
             <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
             <div class="title">Lorem, ipsum.</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
@@ -171,7 +117,7 @@
               quasi?</p>
           </div>
 
-          <div class="eventBox">
+          <div class="longScrollBox">
             <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
             <div class="title">Lorem, ipsum.</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
@@ -179,7 +125,7 @@
               quasi?</p>
           </div>
 
-          <div class="eventBox">
+          <div class="longScrollBox">
             <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
             <div class="title">Lorem, ipsum.</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
@@ -187,7 +133,7 @@
               quasi?</p>
           </div>
 
-          <div class="eventBox">
+          <div class="longScrollBox">
             <img src="https://www.ancpatna.ac.in/_Devloper/Icon/events.jpg" alt="">
             <div class="title">Lorem, ipsum.</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ea laudantium beatae ut iste harum
