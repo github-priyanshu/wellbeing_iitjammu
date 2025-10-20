@@ -1,23 +1,10 @@
-:root{
-
+main{
+    
     --bg_dark_blue: white;
     --bg_light_blue: black;
     --text_dark: black;
     --text_light: black;
     --accent_blue: white;
-
-}
-
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-body{
-
     font-family: cursive;
     background-color: var(--bg_dark_blue);
     color: var(--text_dark);
@@ -177,5 +164,15 @@ body{
 .card_back{
 
     transform: rotateY(180deg);
+
+}
+
+@media(max-width: 768px){
+
+    .team_grid{
+
+        grid-template-columns: 1fr;
+
+    }
 
 }
