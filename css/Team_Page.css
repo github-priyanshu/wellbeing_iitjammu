@@ -1,0 +1,181 @@
+:root{
+
+    --bg_dark_blue: white;
+    --bg_light_blue: black;
+    --text_dark: black;
+    --text_light: black;
+    --accent_blue: white;
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: cursive;
+    background-color: var(--bg_dark_blue);
+    color: var(--text_dark);
+
+}
+
+.team_content{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+}
+
+.title{
+
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.team_content{
+
+    background-color: var(--bg_dark_blue);
+    padding: 5rem 0;
+
+}
+
+.team_content .title{
+
+    color: black;
+
+}
+
+.team_grid{
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(100vh, 1fr));
+    gap: 2rem;
+
+}
+
+.team_card{
+
+    background-color: var(--bg_light_blue);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.5);
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+
+}
+
+.team_sector{
+
+    border: 1px solid var(--bg_light_blue);
+    border-radius: 12px;
+    min-height: 420px;
+    transition: transform 0.6s ease;
+    
+}
+
+.profile_pic_section{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1.5rem 1.5rem;
+    gap: 2rem;
+
+}
+
+.profile_pic{
+
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    border: 4px solid var(--bg_light_blue);
+
+}
+
+.picture{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+
+}
+
+.team_card h3{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.25rem;
+
+}
+
+.team_sector h2{
+
+    font-weight: 600;
+    margin-top: 1.2rem;
+    color: black;
+    text-align: center;
+
+}
+
+.team_card p{
+
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--accent_blue);
+    margin-bottom: 1.5rem;
+
+}
+
+.team_card:hover{
+
+    transform: scale(1.02) translateY(-10px);
+
+}
+
+.team_card:hover .picture{
+
+    filter: grayscale(0%);
+    transform: scale(1.5);
+}
+
+.flipper{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+
+}
+
+.card_front, .card_back{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    backface-visibility: hidden;
+
+}
+
+.card_back{
+
+    transform: rotateY(180deg);
+
+}
