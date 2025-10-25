@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .c {
@@ -153,7 +154,7 @@ body * {
     }
 
     & .img {
-      width: 45%;
+      width: 30%;
 
       & img {
         width: 100%;
@@ -202,11 +203,30 @@ body * {
 
 }
 
-.desc {
-  font-size: 0.75em;
-  text-align: justify;
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #72c9ecff;
+  border-radius: 150px;
+  width: 90%;
+  padding: 20px;
+  border: 10px solid #2291cfff;
+  margin: 0 auto;
 }
 
-.teamlink {
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
+  width: 100%;
+}
+
+.name, .phone, .email {
+  color: #444;
   font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: #2f5f9aff;
 }
