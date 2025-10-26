@@ -160,10 +160,7 @@ body * {
         max-width: 500px;
         aspect-ratio: 1/1;
         object-fit: cover;
-        border-radius: 50%;
-        border: 5px;
-        border-style: solid;
-        border-color: #12b0db77;
+        border-radius: 10%;
       }
     }
   }
@@ -203,10 +200,6 @@ body * {
 }
 
 .desc {
-  font-size: 0.75em;
+  font-size: 1em;
   text-align: justify;
-}
-
-.teamlink {
-  font-size: 2em;
 }
