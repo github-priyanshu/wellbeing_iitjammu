@@ -29,6 +29,10 @@
         font-size: 1.4em;
         font-weight: bold;
       }
+      & .desc{
+        height: 300px;
+        overflow: auto;
+      }
     }
   }
 }
