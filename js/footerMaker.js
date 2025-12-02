@@ -8,7 +8,7 @@ document.body.insertAdjacentHTML("beforeend", `
         <p><strong>Emergency:</strong> Any time Online Counselling</p>
 
         <div class="lineMargin" m="50px"></div>
-        <p>Follow Us</p>
+
       </div>
 
       <div class="left" fs=".9em">
