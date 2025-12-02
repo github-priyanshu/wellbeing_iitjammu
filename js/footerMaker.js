@@ -14,7 +14,9 @@ document.body.insertAdjacentHTML("beforeend", `
       <div class="left" fs=".9em">
         <p >
           <strong>OFFICE ADDRESS & CONTACT DETAILS:</strong>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error cupiditate veniam neque aliquam doloremque.
+          Indian Institute of Technology Jammu,
+Jagti, NH-44 , PO Nagrota,
+Jammu - 181 221 J&K,  India.
         </p>
         <div class="lineMargin" m="10px"></div>
 
